@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant & Seed Emporium</title>
+<link rel="stylesheet" href="suba.css">
+</head>
+<body>
+<header>
+    <h1>Plant & Seed Emporium</h1>
+    <div id="user-info"></div> <!-- Display user information when logged in -->
+</header>
+<nav>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#" class="active" onclick="logout()">Logout</a></li> <!-- Logout button -->
+        <!-- Additional categories -->
+        <li><a href="sell.html" class="active">Sell</a></li>
+        <li><a href="#" class="active" onclick="filterProducts('herbs')">Herbs</a></li>
+        <li><a href="#" class="active" onclick="filterProducts('flowers')">Flowers</a></li>
+        <li><a href="#" class="active" onclick="filterProducts('tools')">Gardening Tools</a></li>
+    </ul>
+    <input type="text" id="search-input" placeholder="Search products...">
+</nav>
+<main>
+    <section id="products">
+        <!-- Products will be dynamically added here -->
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Plant & Seed Emporium</p>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+<script src="hari.js"></script>
+</body>
+</html>

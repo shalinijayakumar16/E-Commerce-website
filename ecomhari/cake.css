@@ -1,0 +1,144 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8e7d2;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #6e3e16;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6e3e16;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #bf6d3e;
+}
+
+#hero {
+    background-image: url('cake-hero.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #bf6d3e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8e4322;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f8e7d2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Existing CSS remains the same */
+
+.cake-container {
+    position: relative;
+    width: 300px; /* Adjust size as needed */
+    margin: 0 auto;
+}
+
+.cake-image {
+    display: block;
+    width: 100%;
+}
+
+.cake-part {
+    position: absolute;
+    cursor: pointer;
+}
+
+.layer1 {
+    top: 10%;
+    left: 40%;
+}
+
+.layer2 {
+    top: 30%;
+    left: 35%;
+}
+
+.layer3 {
+    top: 50%;
+    left: 30%;
+}
+
+.layer4 {
+    top: 70%;
+    left: 25%;
+}
+
+.modal .modal-dialog {
+    max-width: 400px;
+}
+
+ .offer-container {
+        background-color: rgba(255, 255, 255, 0.8); /* translucent background */
+        padding: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slide 5s infinite alternate;
+    }
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(100%); }
+    }
+    .feature-box {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }

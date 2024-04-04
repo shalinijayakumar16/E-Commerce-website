@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Search Bar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cac.css') }}">
+</head>
+<body>
+    <header class="header animated fadeInDown">
+        <div class="logo">
+            <img src="cak.jpg" alt="Company Logo" class="animated bounceInLeft">
+            <h3 class="animated fadeInRight">Company Name</h3>
+        </div>
+        <div class="search-bar animated fadeIn">
+            <input type="text" placeholder="Search..." class="form-control">
+        </div>
+        <div>
+            <a href="/signup" class="btn btn-primary animated bounceInRight">Sign In</a> | <a href="/login" class="btn btn-primary animated bounceInRight">Login</a>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg animated slideInDown">
+        <button type="button" onclick="openNav()" class="animated fadeInLeft">
+            &#9776;
+        </button>   
+        <div class="collapse navbar-collapse justify-content-center animated fadeIn">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sell.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="mySidenav" class="sidenav animated fadeInLeft">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <a href="#" class="animated slideInDown">Link 1</a>
+        <a href="#" class="animated slideInDown">Link 2</a>
+        <a href="#" class="animated slideInDown">Link 3</a>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="section animated zoomIn">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <h3>Product 1</h3>
+                <p>Description of Product 1.</p>
+                <button class="add-to-cart btn btn-primary animated bounceIn">Add to Cart</button>
+            </div>
+            <div class="product-container">
+                <h3>Product 2</h3>
+                <p>Description of Product 2.</p>
+                <button class="add-to-cart btn btn-primary animated bounceIn">Add to Cart</button>
+            </div>
+        </div>
+    
+        <!-- Cart Section -->
+        <div class="cart animated slideInRight" id="cart">
+            <h2>Cart</h2>
+            <p>Product 1 - $10</p>
+            <p>Product 2 - $15</p>
+            <button class="order-btn btn btn-success animated fadeIn">Order</button>
+            <button class="cancel-btn btn btn-danger animated fadeIn">Cancel</button>
+        </div>
+    
+        <div class="section animated zoomIn">
+            <h2>Latest Offers</h2>
+            <div class="offer-slider">
+                <div class="offer-container" id="off3">
+                    <h3>Special Offer</h3>
+                    <p>Get 20% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off4">
+                    <h3>Special sreleela Offer</h3>
+                    <p>Get 100% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container">
+                    <h3>Special sreleela Offer</h3>
+                    <p>Get 100% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off1">
+                    <h3>Special sreleela Offer</h3>
+                    <p>Get 100% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off2">
+                    <h3>Special sreleela Offer</h3>
+                    <p>Get 100% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off3">
+                    <h3>Special Offer</h3>
+                    <p>Get 20% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off3">
+                    <h3>Special Offer</h3>
+                    <p>Get 20% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off3">
+                    <h3>Special Offer</h3>
+                    <p>Get 20% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off3">
+                    <h3>Special Offer</h3>
+                    <p>Get 20% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <div class="offer-container" id="off3">
+                    <h3>Special Offer</h3>
+                    <p>Get 20% off on all products! Hurry up, limited time offer.</p>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>
+           
+        </div>   
+        <div class="section animated zoomIn">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <h3>Product 1</h3>
+                <p>Description of Product 1.</p>
+                <button class="add-to-cart btn btn-primary animated bounceIn">Add to Cart</button>
+            </div>
+            <div class="product-container">
+                <h3>Product 2</h3>
+                <p>Description of Product 2.</p>
+                <button class="add-to-cart btn btn-primary animated bounceIn">Add to Cart</button>
+            </div>
+        </div> 
+    </div>
+    
+    <footer class="animated fadeIn">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            cart.classList.add('open');
+        });
+    });
+
+    document.querySelector('.cancel-btn').addEventListener('click', () => {
+        cart.classList.remove('open');
+    });
+
+    document.querySelector('.next-btn').addEventListener('click', () => {
+        document.querySelector('.offer-slider').scrollBy({ left: 300, behavior: 'smooth' });
+    });
+    
+    document.querySelector('.prev-btn').addEventListener('click', () => {
+        document.querySelector('.offer-slider').scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    
+    </script>
+</body>
+</html>

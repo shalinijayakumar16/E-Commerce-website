@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(200, 230, 200, 0.8)); /* Translucent gradient background */
+}
+
+header, footer {
+    background-color: rgba(50, 50, 50, 0.8); /* Dark translucent background for header and footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: rgba(50, 50, 50, 0.6); /* Slightly lighter translucent background for navigation */
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-translucent background for active link */
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styling for products can be added here */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent background for product cards */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent background for search input */
+}

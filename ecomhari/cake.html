@@ -1,0 +1,98 @@
+w<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Cake Shop</title>
+    <link rel="stylesheet" href="cake.css">
+</head>
+<body>
+    <header>
+        <h1>Swirl & Style Cakes</h1>
+        <nav>
+            <ul>
+                <li><a href="#customize">Customize Your Cake</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>Welcome to Swirl & Style Cakes</h2>
+        <p>Create your dream cake with our customization options!</p>
+        <a href="#customize" class="btn">Customize Now</a>
+    </section>
+    <section id="customize">
+        <h2>Customize Your Cake</h2>
+        <div class="cake-container">
+            <img src="cak.jpg" alt="Cake Image" class="cake-image">
+            <div class="cake-part layer1" data-toggle="modal" data-target="#toppingsModal">
+                <i class="bi bi-egg-fried"></i>
+            </div>
+            <div class="cake-part layer2" data-toggle="modal" data-target="#fillingsModal">
+                <i class="bi bi-egg-fried"></i>
+            </div>
+            <div class="cake-part layer3" data-toggle="modal" data-target="#decorationsModal">
+                <i class="bi bi-egg-fried"></i>
+            </div>
+            <div class="cake-part layer4" data-toggle="modal" data-target="#toppersModal">
+                <i class="bi bi-egg-fried"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modals for different customization options -->
+    <div class="modal fade" id="toppingsModal" tabindex="-1" role="dialog" aria-labelledby="toppingsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="toppingsModalLabel">Choose Toppings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="toppingsSelect">Select Toppings:</label>
+                            <select class="form-control" id="toppingsSelect" multiple>
+                                <option>Silver Balls</option>
+                                <option>Customized Image Design</option>
+                                <option>Nuts</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Toppings</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="modal fade" id="fillingsModal" tabindex="-1" role="dialog" aria-labelledby="fillingsModalLabel" aria-hidden="true">
+        <!-- Fillings form will go here -->
+    </div>
+    
+    <div class="modal fade" id="decorationsModal" tabindex="-1" role="dialog" aria-labelledby="decorationsModalLabel" aria-hidden="true">
+        <!-- Decorations form will go here -->
+    </div>
+    
+    <div class="modal fade" id="toppersModal" tabindex="-1" role="dialog" aria-labelledby="toppersModalLabel" aria-hidden="true">
+        <!-- Toppers form will go here -->
+    </div>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <!-- Gallery images will go here -->
+    </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <!-- FAQ content will go here -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Swirl & Style Cakes. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
