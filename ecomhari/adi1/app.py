@@ -22,7 +22,7 @@ def index():
         user_data = cursor.fetchone()
         return render_template('default.html', logged_in=True, user_data=user_data)
     else:
-        return render_template('default1.html', logged_in=False)
+        return render_template('index.html', logged_in=False)
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
